@@ -19,7 +19,7 @@ export class User {
   get email() { return this.#email; }
 
   getInfo() {
-    return `id: ${this.#id}; name: ${this.#name} userName: ${this.userName}`;
+    return `Id: ${this.#id}</br> name: ${this.#name} </br> userName: ${this.userName}`;
   }
 }
 

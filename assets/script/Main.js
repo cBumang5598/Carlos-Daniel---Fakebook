@@ -7,8 +7,8 @@ const daniel = new Subscriber(
   'Daniel Zhang',
   'danZ',
   'dan@714.com',
-  ['My Coding Page', 'FPS Training Page'],
-  ['CS2 Group', 'Valorant Group'],
+  ['My Coding Page'],
+  ['MITT Group'],
   true
 );
 
