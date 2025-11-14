@@ -1,6 +1,6 @@
 'use strict';
 
-class User {
+export class User {
   #id;
   #name;
   #userName;

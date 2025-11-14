@@ -2,7 +2,7 @@
 
 import { User } from "./User.js";
 
-class Subscriber extends User {
+export class Subscriber extends User {
   #pages;
   #groups;
   #canMonetize = false;
