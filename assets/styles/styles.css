@@ -69,5 +69,7 @@ header {
 /* post */
 .post-box {
   color: white;
-
+  display: flex;
+  place-content: center;
+  height: 400px;
 }
