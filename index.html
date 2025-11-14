@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Carlos Bumanglag">
+    <meta name="description" content="My First Web Page">
+    <meta name="keywords" content="html, css, web, web development, javascript">
+    <link rel="stylesheet" href="./assets/styles/styles.css" media="all">
+    <link rel="icon" href="./assets/media/image.png" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script type="module" src="./assets/script/Main.js" defer></script>
+    <title>Fakebook</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="icon">
+        <h1>FAKEBOOK</h1>
+      </div>
+      <div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="#">Friends</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Groups</a></li>
+          <li><a href="#">My ads</a></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </nav>
+      </div>
+      <div>
+        <i id="profile-btn" class="fa-regular fa-user"></i>
+      </div>
+    </header>
+    <main>
+      <div id="post-content" class="post-box">
+        <textarea id="post-text" placeholder="What's new, Dan?"></textarea>
+          <div class="post-controls">
+            <label for="image-upload" class="upload-label">
+              <i class="fa-regular fa-image"></i>
+            </label>
+            <input type="file" id="image-upload" accept="image/*" hidden>
+            <span id="file-name"></span>
+            <button id="post-btn">Post</button>
+          </div>
+      </div>
+
+      <div class="new-post"></div>
+
+      <div id="modal" class="modal hidden">
+        <div id="modal-content" class="modal-content hidden">
+          <span id="modal-close" class="close hidden">&times;</span>
+          <h3>User account info</h3>
+          <p id="modal-body"></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto; 
+}
+
+body {
+  background-color: #14161d;
+}
+
+/* header content */
+header h1 {
+  color: #2222ee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #2d3141;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-bar a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* hide class */
+.hidden {
+  display: none;
+}
+
+/* modal groups */
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb( 0 0 0/0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.close {
+  cursor: pointer;
+}
+
+/* post */
+.post-box {
+  color: white;
+
+}
