@@ -74,12 +74,13 @@ header {
   text-align: center;
   padding-left: 30px;
   display: flex;
-  line-height: 54px;
-  width: 400px;
+  height: 100px;
+  width: 600px;
   margin-top: 100px;
   background-color:rgb(176, 176, 176);
   place-items: center;
   border-radius: 10px;
+  margin-left: 250px;
 }
 .post-box textarea{
   background-color:rgb(176, 176, 176);
