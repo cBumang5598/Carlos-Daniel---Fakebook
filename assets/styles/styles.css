@@ -49,6 +49,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .modal-content {
@@ -60,6 +61,7 @@ header {
   height: 200px;
   text-align: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .close {
@@ -77,9 +79,11 @@ header {
   margin-top: 100px;
   background-color:rgb(176, 176, 176);
   place-items: center;
+  border-radius: 10px;
 }
 .post-box textarea{
   background-color:rgb(176, 176, 176);
   color:#14161d;
   border-color: rgb(176, 176, 176);
+  border-radius: 5px;
 }
