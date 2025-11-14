@@ -68,3 +68,13 @@ function createPost() {
 const postbtn = document.getElementById('post-btn');
 postbtn.addEventListener('click', createPost); 
 
+const inputimage = document.getElementById('image-upload');
+const imagename = document.getElementById('file-name');
+
+inputimage.addEventListener('change', () => {
+  if (inputimage.files.length > 0){
+    imagename.innerHTML = inputimage.files[0].name;
+  } else {
+    imagename.innerHTML = '';
+  }
+})
