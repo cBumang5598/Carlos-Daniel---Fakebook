@@ -8,6 +8,7 @@
     <meta name="keywords" content="html, css, web, web development, javascript">
     <link rel="stylesheet" href="./assets/styles/styles.css" media="all">
     <link rel="icon" href="./assets/media/image.png" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script type="module" src="./assets/script/Main.js" defer></script>
     <title>Fakebook</title>
   </head>
@@ -20,22 +21,22 @@
       <div>
       <nav class="nav-bar">
         <ul>
-          <a href="#">Friends</a>
-          <a href="#">Pages</a>
-          <a href="#">Groups</a>
-          <a href="#">My ads</a>
-          <a href="#">Settings</a>
+          <li><a href="#">Friends</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Groups</a></li>
+          <li><a href="#">My ads</a></li>
+          <li><a href="#">Settings</a></li>
         </ul>
       </nav>
       </div>
       <div>
-        <a href="#modal-content"><i class="fa-regular fa-user"></i></a>
+        <i id="profile-btn" class="fa-regular fa-user"></i>
       </div>
     </header>
     <main>
       <div id="modal" class="modal hidden">
-        <div class="modal-content">
-          <span id="modal-close" class="close">&times;</span>
+        <div id="modal-content" class="modal-content hidden">
+          <span id="modal-close" class="close hidden">&times;</span>
           <h3>User account info</h3>
           <p id="modal-body"></p>
         </div>

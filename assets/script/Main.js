@@ -12,4 +12,22 @@ const daniel = new Subscriber(
   true
 );
 
-console.log(daniel.getInfo()); 
+const profilebtn = document.getElementById('profile-btn');
+const modal = document.getElementById('modal');
+const closebtn = document.getElementById('modal-close');
+const modalbody = document.getElementById('modal-body');
+const modalcontent = document.getElementById('modal-content');
+
+profilebtn.addEventListener('click', () => {
+  modal.classList.remove('hidden');
+  modalcontent.classList.remove('hidden');
+  closebtn.classList.remove('hidden');
+  modalbody.innerHTML = daniel.getInfo();
+})
+
+closebtn.addEventListener('click', () =>{
+  modal.classList.add('hidden');
+  modalcontent.classList.add('hidden');
+  closebtn.classList.add('hidden');
+})
+
