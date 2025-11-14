@@ -73,4 +73,6 @@ header {
   display: flex;
   place-content: center;
   height: 400px;
+  width: 400px;
+  object-fit: contain;
 }

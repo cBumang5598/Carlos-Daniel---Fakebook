@@ -24,9 +24,4 @@ export class Post {
   return this.#date.toLocaleString('en-ca', options);
 }
 
-  // getPostText() {
-  //   return 
-  //     this.#text;
-  //   ;
-  // }
 }

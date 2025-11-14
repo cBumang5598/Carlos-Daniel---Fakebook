@@ -38,6 +38,10 @@ modal.addEventListener('click',(edge) =>{
   if(edge.target === modal)closebtn.classList.add('hidden');
 })
 
+function clearPostBox() {
+  document.getElementById("post-text").value = "";
+  document.getElementById("image-upload").value = "";
+}
 
 function createPost() {
   const posttext = document.getElementById('post-text').value;
@@ -56,8 +60,11 @@ function createPost() {
     ${newpost.image ? `<img src="${URL.createObjectURL(newpost.image)}">` : ""}
   `;
   posts.appendChild(box);
+
+  clearPostBox();
 }
 
 
 const postbtn = document.getElementById('post-btn');
-postbtn.addEventListener('click', createPost);
+postbtn.addEventListener('click', createPost); 
+
