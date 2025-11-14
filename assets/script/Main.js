@@ -31,3 +31,8 @@ closebtn.addEventListener('click', () =>{
   closebtn.classList.add('hidden');
 })
 
+modal.addEventListener('click',(edge) =>{
+  if(edge.target === modal)modal.classList.add('hidden');
+  if(edge.target === modal)modalcontent.classList.add('hidden');
+  if(edge.target === modal)closebtn.classList.add('hidden');
+})
