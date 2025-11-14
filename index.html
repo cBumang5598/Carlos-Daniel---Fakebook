@@ -34,6 +34,19 @@
       </div>
     </header>
     <main>
+      <div id="post-content" class="post-box">
+        <textarea id="post-text" placeholder="What's new, Dan?"></textarea>
+          <div class="post-controls">
+            <label for="image-upload" class="upload-label">
+              <i class="fa-regular fa-image"></i>
+            </label>
+            <input type="file" id="image-upload" accept="image/*" hidden>
+            <span id="file-name"></span>
+            <button id="post-btn">Post</button>
+          </div>
+      </div>
+
+
       <div id="modal" class="modal hidden">
         <div id="modal-content" class="modal-content hidden">
           <span id="modal-close" class="close hidden">&times;</span>
