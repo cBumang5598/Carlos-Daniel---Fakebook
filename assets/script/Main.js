@@ -1,6 +1,7 @@
 'use strict';
 
 import { Subscriber } from "./Subscriber.js";
+import { Post } from "./Post.js";
 
 const daniel = new Subscriber(
   1234,
@@ -35,4 +36,16 @@ modal.addEventListener('click',(edge) =>{
   if(edge.target === modal)modal.classList.add('hidden');
   if(edge.target === modal)modalcontent.classList.add('hidden');
   if(edge.target === modal)closebtn.classList.add('hidden');
+})
+
+const postcontent = document.getElementById('post-content');
+const posttext = document.getElementById('post-text');
+const postimage = document.getElementById('image-upload');
+const postbtn = document.getElementById('post-btn');
+const posts = document.querySelector('new-post');
+
+
+
+postbtn.addEventListener('click', () => {
+
 })

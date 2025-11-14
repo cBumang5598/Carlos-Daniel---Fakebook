@@ -10,6 +10,10 @@ body {
 }
 
 /* header content */
+header h1 {
+  color: #2222ee;
+}
+
 header {
   display: flex;
   justify-content: space-between;
