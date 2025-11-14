@@ -62,3 +62,9 @@ header {
 .close {
   cursor: pointer;
 }
+
+/* post */
+.post-box {
+  color: white;
+
+}

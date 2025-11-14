@@ -10,6 +10,8 @@ export class Post {
     this.#image = image;
     this.#date = new Date();
   }
+  set text(text) { this.#text = text; }
+  set image(image) { this.#image = image; }
 
   get text() { return this.#text; }
   get image() { return this.#image; }
@@ -22,11 +24,9 @@ export class Post {
   return this.#date.toLocaleString('en-ca', options);
 }
 
-  getPost() {
-    return {
-      text: this.#text,
-      image: this.#image,
-      date: this.date
-    };
-  }
+  // getPostText() {
+  //   return 
+  //     this.#text;
+  //   ;
+  // }
 }

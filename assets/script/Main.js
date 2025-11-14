@@ -38,14 +38,26 @@ modal.addEventListener('click',(edge) =>{
   if(edge.target === modal)closebtn.classList.add('hidden');
 })
 
-const postcontent = document.getElementById('post-content');
-const posttext = document.getElementById('post-text');
-const postimage = document.getElementById('image-upload');
+
+function createPost() {
+  const posttext = document.getElementById('post-text').value;
+  const postimage = document.getElementById('image-upload').files[0];
+  const posts = document.querySelector('.new-post');
+
+  const newpost = new Post(posttext, postimage);
+  // const postdata = newpost.getPost();
+  const box = document.createElement("div");
+  box.classList.add("post-box");
+  console.log(newpost.text);
+
+  box.innerHTML = `
+    <p>${newpost.text}</p>
+    <p>${newpost.date}</p>
+    ${newpost.image ? `<img src="${URL.createObjectURL(newpost.image)}">` : ""}
+  `;
+  posts.appendChild(box);
+}
+
+
 const postbtn = document.getElementById('post-btn');
-const posts = document.querySelector('new-post');
-
-
-
-postbtn.addEventListener('click', () => {
-
-})
+postbtn.addEventListener('click', createPost);
