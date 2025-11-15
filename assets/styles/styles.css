@@ -167,3 +167,10 @@ header {
   background-color: rgb(40, 120, 200);
   cursor: pointer;
 }
+
+#file-name {
+  color: #888;
+  font-size: 14px;
+}
+
+/* post area */
