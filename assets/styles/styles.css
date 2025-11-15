@@ -104,7 +104,7 @@ header {
   cursor: pointer;
 }
 
-/* post */
+/* post box / post controls */
 .create-post-box {
   background-color: #1f2229;
   border-radius: 8px;
@@ -129,4 +129,26 @@ header {
 
 .create-post-box textarea::placeholder {
   color: #a3a3a3;
+}
+
+.post-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.file-uploader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.upload-label {
+  color: #aaa;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.upload-label:hover {
+  color: #fff;
 }
