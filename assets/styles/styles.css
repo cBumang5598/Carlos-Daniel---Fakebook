@@ -7,24 +7,34 @@
 
 body {
   background-color: #14161d;
-  place-content: center;
-  align-items: center;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 /* header content */
 header h1 {
   color: rgb(61,153,246);
   text-align: left;
-  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 24px;
 }
 
 header {
+  background-color: rgb(31,34,41);
+  padding: 15px 0;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+}
+
+.header-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: rgb(31,34,41);
-  width: auto;
 }
 
 .nav-bar ul {
