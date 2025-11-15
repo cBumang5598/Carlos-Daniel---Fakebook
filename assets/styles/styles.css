@@ -82,10 +82,13 @@ header {
 /* modal groups */
 .modal {
   position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
 }
 
 .modal-content {
@@ -97,7 +100,7 @@ header {
   width: min(100% - 40px, 400px);
   text-align: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 0;
   margin: auto; 
 }
 
@@ -105,11 +108,13 @@ header {
   font-size: 16px;
   line-height: 1.8;
   white-space: pre-wrap; 
+  z-index: 1;
 }
 
 .modal-content h3 {
   margin-bottom: 15px;
   font-size: 24px;
+  z-index: 2;
 }
 
 .close {
