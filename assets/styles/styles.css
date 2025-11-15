@@ -105,21 +105,28 @@ header {
 }
 
 /* post */
-.post-box {
-  color: #fff;
-  text-align: center;
-  padding-left: 30px;
+.create-post-box {
+  background-color: #1f2229;
+  border-radius: 8px;
+  padding: 20px;
   display: flex;
-  height: 150px;
-  width: 50%;
+  flex-direction: column;
   margin-top: 100px;
-  background-color:rgb(31,34,41);
-  border-radius: 10px;
-  margin-left: 300px;
 }
-.post-box textarea{
-  background-color:rgb(31,34,41);
-  color:#fff;
-  border-color: rgb(31,34,41);
+
+.create-post-box textarea {
+  background-color: #333;
+  color: #fff;
+  border: none;
   border-radius: 5px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  min-height: 100px;
+  resize: vertical;
+  margin-bottom: 15px;
+}
+
+.create-post-box textarea::placeholder {
+  color: #a3a3a3;
 }
