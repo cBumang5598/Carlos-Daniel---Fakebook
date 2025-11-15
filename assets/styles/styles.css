@@ -162,3 +162,8 @@ header {
   border-radius: 5px;
   padding: 5px 20px;
 }
+
+#post-btn:hover {
+  background-color: rgb(40, 120, 200);
+  cursor: pointer;
+}
