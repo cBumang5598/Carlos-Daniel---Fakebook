@@ -89,12 +89,12 @@ header {
 }
 
 .modal-content {
+  position: relative;
   background-color: #fff;
-  padding: 20px;
+  color: #14161d;
+  padding: 30px;
   border-radius: 10px;
-  max-width: 300px;
-  width: 200px;
-  height: 200px;
+  width: min(100% - 40px, 400px);
   text-align: center;
   align-items: center;
   z-index: 1000;
@@ -197,3 +197,4 @@ header {
   border-radius: 8px;
   margin-top: 15px;
 }
+
