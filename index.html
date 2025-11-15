@@ -33,34 +33,37 @@
         <i id="profile-btn" class="fa-regular fa-user"></i>
       </div>
     </header>
+
     <main>
-      <div id="post-content" class="create-post-box">
-        <textarea id="post-text" placeholder="Type here...."></textarea>
+      <div class="container">
+        <div id="post-content" class="create-post-box">
+          <textarea id="post-text" placeholder="Type here...."></textarea>
 
-        <div class="post-controls">
-          <div class="file-uploader">
-            <label for="image-upload" class="upload-label" title="Attached image">
-              <i class="fa-regular fa-image"></i>
-            </label>
+          <div class="post-controls">
+            <div class="file-uploader">
+              <label for="image-upload" class="upload-label" title="Attached image">
+                <i class="fa-regular fa-image"></i>
+              </label>
 
-            <input type="file" id="image-upload" accept="image/*" hidden>
+              <input type="file" id="image-upload" accept="image/*" hidden>
 
-            <span id="file-name"></span>
+              <span id="file-name"></span>
 
-            <button id="post-btn">Post</button>
+              <button id="post-btn">Post</button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="new-post"></div>
-
-      <div id="modal" class="modal hidden">
-        <div id="modal-content" class="modal-content hidden">
-          <span id="modal-close" class="close hidden">&times;</span>
-          <h3>User account info</h3>
-          <p id="modal-body"></p>
-        </div>
+        <div class="new-post"></div>
       </div>
     </main>
+
+    <div id="modal" class="modal hidden">
+      <div id="modal-content" class="modal-content hidden">
+        <span id="modal-close" class="close hidden">&times;</span>
+        <h3>User account info</h3>
+        <p id="modal-body"></p>
+      </div>
+    </div>
   </body>
 </html>
