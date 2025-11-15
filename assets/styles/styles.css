@@ -10,6 +10,8 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  margin: 0;
+  padding: 0; 
 }
 
 /* header content */
@@ -29,6 +31,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 900;
+  width: 100%;
 }
 
 .header-flex {
@@ -41,6 +44,7 @@ header {
   display: flex;
   gap: 20px;
   list-style: none;
+  padding-right: 120px;
 }
 
 .nav-bar a {
