@@ -52,8 +52,27 @@ header {
 
 .nav-bar a:hover {
   color: #fff;
+  transition: 0.3s;
 }
 
+#profile-btn {
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  background-color:#444
+}
+
+#profile-btn:hover {
+  background-color: #6a6969;
+  transition: 0.3s;
+}
 
 /* hide class */
 .hidden {
