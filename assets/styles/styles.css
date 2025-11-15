@@ -41,13 +41,17 @@ header {
   display: flex;
   gap: 20px;
   list-style: none;
-  text-align: center;
-  padding-right: 200px;
 }
 
 .nav-bar a {
-  color: #fff;
+  color: #aaa;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-bar a:hover {
+  color: #fff;
 }
 
 
