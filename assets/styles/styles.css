@@ -95,13 +95,16 @@ header {
   position: relative;
   background-color: #fff;
   color: #14161d;
-  padding: 30px;
   border-radius: 10px;
+  padding-right: 100px;
+  padding-left: 100px;
+  height: 400px;
   width: min(100% - 40px, 400px);
   text-align: center;
   align-items: center;
   z-index: 0;
-  margin: auto; 
+  margin: auto;
+  margin-right: 800px;
 }
 
 #modal-body {
@@ -125,6 +128,10 @@ header {
   font-weight: bold;
   color: #888;
   cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
 }
 
 /* post box / post controls */
