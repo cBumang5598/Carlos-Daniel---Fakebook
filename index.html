@@ -34,16 +34,22 @@
       </div>
     </header>
     <main>
-      <div id="post-content" class="post-box">
+      <div id="post-content" class="create-post-box">
         <textarea id="post-text" placeholder="Type here...."></textarea>
-          <div class="post-controls">
-            <label for="image-upload" class="upload-label">
+
+        <div class="post-controls">
+          <div class="file-uploader">
+            <label for="image-upload" class="upload-label" title="Attached image">
               <i class="fa-regular fa-image"></i>
             </label>
+
             <input type="file" id="image-upload" accept="image/*" hidden>
+
             <span id="file-name"></span>
+
             <button id="post-btn">Post</button>
           </div>
+        </div>
       </div>
 
       <div class="new-post"></div>
